@@ -9,10 +9,10 @@ namespace TalebElm.Api.Controllers
     public class ExamsController : ControllerBase 
     {
         [HttpGet("{id}")]
-        public IActionResult Get(Guid id) => NotImplemented();
+        public IActionResult Get(Guid id) => NotImplementedException();
         [HttpPost]
-        public IActionResult Post() => NotImplemented();
+        public IActionResult Post() => NotImplementedException();
         [HttpPost("{id}/submit")]
-        public IActionResult Submit(Guid id) => NotImplemented();
+        public IActionResult Submit(Guid id) => NotImplementedException();
     }
 }

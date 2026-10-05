@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
+using TalebElm.Domain.Exceptions;
 namespace TalebElm.Api.Controllers
 {
  
@@ -9,10 +9,10 @@ namespace TalebElm.Api.Controllers
     public class ExamsController : ControllerBase 
     {
         [HttpGet("{id}")]
-        public IActionResult Get(Guid id) => NotImplementedException();
+        public IActionResult Get(Guid id) => throw new NotImplementedException();
         [HttpPost]
-        public IActionResult Post() => NotImplementedException();
+        public IActionResult Post() => throw new NotImplementedException();
         [HttpPost("{id}/submit")]
-        public IActionResult Submit(Guid id) => NotImplementedException();
+        public IActionResult Submit(Guid id) => throw new NotImplementedException();
     }
 }
